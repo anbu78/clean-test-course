@@ -8,6 +8,8 @@ describe('Shows Appeteasers', () => {
     cy.contains('Fajita Tacos');
   });
   it('selects Appeteasers', () => {
-    //TODO: Add a test to check Appeteasers
+    cy.contains('Appeteasers').click();
+    cy.contains('Tater Tots');
+    cy.contains('Buffalo Wings');
   });
 });
